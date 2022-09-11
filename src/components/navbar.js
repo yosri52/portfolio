@@ -1,3 +1,4 @@
+import {NavLink} from 'react-router-dom'
 function navbar (props) {
     return (
     < nav class="navbar navbar-dark bg-dark" >
@@ -9,16 +10,16 @@ function navbar (props) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <NavLink to = "/" className="nav-link"> Home </NavLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <NavLink to="/contact" className="nav-link">Skills </NavLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <NavLink to = "/projects" className="nav-link">projects </NavLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <NavLink to = "/contact" className="nav-link">Contact </NavLink>
                     </li>
                     <li class="nav-item">
                     </li>
