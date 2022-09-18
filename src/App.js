@@ -11,11 +11,12 @@ function App() {
       <BrowserRouter>
         <h1> hello </h1>
         <Navbar />
+        <div className='container mt-5'>
         <Route exact path="/" component={Home} />
         <Route path="/contact" component={Contact} />
         <Route path="/projects" component={Projects} />
         <Route path="/skills" component={Skills} />
-       
+       </div>
       </BrowserRouter>
     </div>
   )
